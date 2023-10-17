@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+<meta charset="UTF-8">
+<title>The Yellow Store E commerce site </title>
+<link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+<body>
+
+    
+    <div class="header">
+    <div class="container">
+    <div class="navbar">
+        <div class ="logo">
+            <img src="images/devur.png" width="300px">
+        </div>
+        <div class="container">
+            <form>
+                <input type="search" name="query" placeholder="Search...">
+                <input type="submit" value="Search">
+            </form>
+            
+            </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="">Home</a></li>
+                 <li><a href="">Products</a></li>
+                 <li><a href="">About</a></li>
+                 <li><a href="">Contact</a></li>
+                 <li><a href="">Account</a></li>
+                <li><a href="">Login</a></li>
+                
+            </ul>
+        </nav>
+        <img src="images/cart.png" width="30px" height="30px">
+        <img src="images/menu.png" width="30px" height="30px">
+    </div>
+    <div class="row">
+     <div class="col-2">
+         <h1>  All kind of product <br>Available</h1>
+         <p>Shopping from The Yellow Store for better experience</p>
+         <a href="" class="btn">Explore Now &#x2607;</a>
+         <a href="" class="btn">Learn More&#x2605;</a>
+        
+        </div>
+        <div class="col-2">
+            <img src="images/image1.png">
+        
+        </div>
+    </div>
+    </div>
+       <! ------- featured categories------------------->
+        <div class="categories">
+            <div class ="small-container">
+                        <div class ="row">
+                <div class="col-3">
+                    <img src ="images/category-1.jpg">
+                </div>
+                <div class="col-3">
+                      <img src ="images/category-2.jpg">
+                </div>
+                <div class="col-3">
+                  <img src ="images/category-3.jpg">
+                </div>
+        
+            </div>
+
+        </div>
+             <! ------- featured products------------------->
+            <div class="small-container">
+            <h2 class="title">Featured Product</h2>
+                <div class="row">
+                <div class="col-4">
+                    <img src="images/product-1.jpg">
+                    <h4> Red Printed Tshirt</h4>
+                    <div class="rating">
+                        <span class="star" onclick="rateProduct(1)">☆</span>
+                        <span class="star" onclick="rateProduct(2)">☆</span>
+                        <span class="star" onclick="rateProduct(3)">☆</span>
+                        <span class="star" onclick="rateProduct(4)">☆</span>
+                        <span class="star" onclick="rateProduct(5)">☆</span>
+                        
+                    </div>
+                    <p>Rs 1500</p>
+                    <button class="buybutton">Buy Now</button>
+                    <button class="cartbutton">Add to cart</button>
+                    </div>
+                    <div class="payment">
+                        <h1 class="payTitle">Personal Information</h1>
+                        <label>Name and Surname</label>
+                        <input type="text"placeholder="Devraj"class="payInput">
+                        <label>Phone Number</label>
+                        <input type="text"placeholder="9770000000" class="payInput">
+                        <label>Address</label>
+                        <input type="text"placeholder="Kathmandu" class="payInput">
+                        <h1 class="payTitle">Card Information</h1>
+                        <div class="cardIcons">
+                            <img src="K.jpg" width="40" alt="" class="cardIcon">
+                            <img src="R.png" width="40" alt="" class="cardIcon">
+                            <img src="V.png" width="40" alt="" class="cardIcon">
+                            <img src="R (2).png" width="40" alt="" class="cardIcon">
+                            <img src="k.png" width="40" alt="" class="cardIcon">
+                            <img src="rrr.png" width="40" alt="" class="cardIcon">
+                        </div>
+                        <label>Name on card</label>
+                        <input type="text"placeholder="Devraj"class="payInput">
+                        <label>Card Number</label>
+                        <input type="text"placeholder="09810000000"class="payInput">
+                        <div class="cardInfo">
+                        <input type="text" placeholder="mm" class="payInput sm">
+                        <input type="text" placeholder="yyy" class="payInput sm">
+                        <input type="text" placeholder="cvv" class="payInput sm">
+                        <br>
+                        
+                        <button class="payButton">checkout</button>
+                        </div>
+                        <span class="close">X</span>
+                        </div>
+                     <div class="col-4">
+                    <img src="images/product-2.jpg">
+                    <h4> HRX Sport Shoes</h4>
+                    <div class="rating">
+                        <span class="star" onclick="rateProduct(1)">☆</span>
+                        <span class="star" onclick="rateProduct(2)">☆</span>
+                        <span class="star" onclick="rateProduct(3)">☆</span>
+                        <span class="star" onclick="rateProduct(4)">☆</span>
+                        <span class="star" onclick="rateProduct(5)">☆</span>
+                    
+                    </div>
+                    <p>Rs 6500</p>
+                    <button class="buybutton">Buy Now</button>
+                    <button class="cartbutton">Add to cart</button>
+                    </div>
+                     <div class="col-4">
+                    <img src="images/product-3.jpg">
+                    <h4> Trouser</h4>
+                    <div class="rating">
+                        <span class="star" onclick="rateProduct(1)">☆</span>
+                        <span class="star" onclick="rateProduct(2)">☆</span>
+                        <span class="star" onclick="rateProduct(3)">☆</span>
+                        <span class="star" onclick="rateProduct(4)">☆</span>
+                    
+                    </div>
+                    <p>Rs 3420</p>
+                    <button class="buybutton">Buy Now</button>
+                    <button class="cartbutton">Add to cart</button>
+                    </div>
+                     <div class="col-4">
+                    <img src="images/product-4.jpg">
+                    <h4> Tshirt</h4>
+                    <div class="rating">
+                        <span class="star" onclick="rateProduct(1)">☆</span>
+                        <span class="star" onclick="rateProduct(2)">☆</span>
+                        <span class="star" onclick="rateProduct(3)">☆</span>
+                        <span class="star" onclick="rateProduct(4)">☆</span>
+                        <span class="star" onclick="rateProduct(5)">☆</span>
+                    
+                    </div>
+                    <p>Rs 1800</p>
+                    <button class="buybutton">Buy Now</button>
+                    <button class="cartbutton">Add to cart</button>
+                    </div>
+                </div>
+                <h2 class="title"> Latest Product</h2>
+                <div class="row">
+                <div class="col-4">
+                    <img src="images/product-5.jpg">
+                    <h4> Shoes</h4>
+                    <div class="rating">
+                        <span class="star" onclick="rateProduct(1)">☆</span>
+                        <span class="star" onclick="rateProduct(2)">☆</span>
+                        <span class="star" onclick="rateProduct(3)">☆</span>
+                        <span class="star" onclick="rateProduct(4)">☆</span>
+                        <span class="star" onclick="rateProduct(5)">☆</span>
+                         
+                        
+                    </div>
+                    <p>Rs 18000</p>
+                    <button class="buybutton">Buy Now</button>
+                    <button class="cartbutton">Add to cart</button>
+                    </div>
+                    
+                     <div class="col-4">
+                    <img src="images/product-6.jpg">
+                    <h4> Adidas Tshirt</h4>
+                    <div class="rating">
+                        <span class="star" onclick="rateProduct(1)">☆</span>
+                        <span class="star" onclick="rateProduct(2)">☆</span>
+                        <span class="star" onclick="rateProduct(3)">☆</span>
+                        <span class="star" onclick="rateProduct(4)">☆</span>
+                        <span class="star" onclick="rateProduct(5)">☆</span>
+                    
+                    </div>
+                    <p>Rs 4200</p>
+                    <button class="buybutton">Buy Now</button>
+                    <button class="cartbutton">Add to cart</button>
+                    </div>
+                     <div class="col-4">
+                    <img src="images/product-7.jpg">
+                    <h4> HRX Shocks</h4>
+                    <div class="rating">
+                        <span class="star" onclick="rateProduct(1)">☆</span>
+                        <span class="star" onclick="rateProduct(2)">☆</span>
+                        <span class="star" onclick="rateProduct(3)">☆</span>
+                        <span class="star" onclick="rateProduct(4)">☆</span>
+                        <span class="star" onclick="rateProduct(5)">☆</span>
+                    
+                    </div>
+                    <p>Rs 500</p>
+                    <button class="buybutton">Buy Now</button>
+                    <button class="cartbutton">Add to cart</button>
+                    </div>
+                     <div class="col-4">
+                    <img src="images/product-8.jpg">
+                    <h4> Fossil Watch</h4>
+                    <div class="rating">
+                        <span class="star" onclick="rateProduct(1)">☆</span>
+                        <span class="star" onclick="rateProduct(2)">☆</span>
+                        <span class="star" onclick="rateProduct(3)">☆</span>
+                        <span class="star" onclick="rateProduct(4)">☆</span>
+                        <span class="star" onclick="rateProduct(5)">☆</span>
+                    
+                    </div>
+                    <p>Rs 5000</p>
+                    <button class="buybutton">Buy Now</button>
+                    <button class="cartbutton">Add to cart</button>
+                    </div>
+                    <div class="row">
+                <div class="col-4">
+                    <img src="images/product-9.jpg">
+                    <h4> Roadster Watch</h4>
+                    <div class="rating">
+                        <span class="star" onclick="rateProduct(1)">☆</span>
+                        <span class="star" onclick="rateProduct(2)">☆</span>
+                        <span class="star" onclick="rateProduct(3)">☆</span>
+                        <span class="star" onclick="rateProduct(4)">☆</span>
+                        <span class="star" onclick="rateProduct(5)">☆</span>
+                        
+                    </div>
+                    <p>Rs 8500</p>
+                    <button class="buybutton">Buy Now</button>
+                    <button class="cartbutton">Add to cart</button>
+                    </div>
+                     <div class="col-4">
+                    <img src="images/product-10.jpg">
+                    <h4> Black Shoes</h4>
+                    <div class="rating">
+                        <span class="star" onclick="rateProduct(1)">☆</span>
+                        <span class="star" onclick="rateProduct(2)">☆</span>
+                        <span class="star" onclick="rateProduct(3)">☆</span>
+                        <span class="star" onclick="rateProduct(4)">☆</span>
+                        <span class="star" onclick="rateProduct(5)">☆</span>
+                    
+                    </div>
+                    <p>Rs 5000</p>
+                    <button class="buybutton">Buy Now</button>
+                    <button class="cartbutton">Add to cart</button>
+                    </div>
+                     <div class="col-4">
+                    <img src="images/product-11.jpg">
+                    <h4> Ladies Shoes</h4>
+                    <div class="rating">
+                        <span class="star" onclick="rateProduct(1)">☆</span>
+                        <span class="star" onclick="rateProduct(2)">☆</span>
+                        <span class="star" onclick="rateProduct(3)">☆</span>
+                        <span class="star" onclick="rateProduct(4)">☆</span>
+                        <span class="star" onclick="rateProduct(5)">☆</span>
+                    
+                    </div>
+                    <p>Rs 1200</p>
+                    <button class="buybutton">Buy Now</button>
+                    <button class="cartbutton">Add to cart</button>
+                    </div>
+                     <div class="col-4">
+                    <img src="images/product-12.jpg">
+                    <h4> Jeans Nike Trouser</h4>
+                    <div class="rating">
+                        <span class="star" onclick="rateProduct(1)">☆</span>
+                        <span class="star" onclick="rateProduct(2)">☆</span>
+                        <span class="star" onclick="rateProduct(3)">☆</span>
+                        <span class="star" onclick="rateProduct(4)">☆</span>
+                        <span class="star" onclick="rateProduct(5)">☆</span>
+                    </div>
+                    <p>Rs 8200</p>
+                    <button class="buybutton">Buy Now</button>
+                    <button class="cartbutton">Add to cart</button>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/jeans2.jpg">
+                        <h4> Jeans</h4>
+                        <div class="rating">
+                            <span class="star" onclick="rateProduct(1)">☆</span>
+                            <span class="star" onclick="rateProduct(2)">☆</span>
+                            <span class="star" onclick="rateProduct(3)">☆</span>
+                            <span class="star" onclick="rateProduct(4)">☆</span>
+                            <span class="star" onclick="rateProduct(5)">☆</span>
+                        
+                        </div>
+                        <p>Rs 2500</p>
+                        <button class="buybutton">Buy Now</button>
+                        <button class="cartbutton">Add to cart</button>
+                        </div>
+                        <div class="col-4">
+                            <img src="images/top3.jpg">
+                            <h4> T-shirts and Jeans</h4>
+                            <div class="rating">
+                                <span class="star" onclick="rateProduct(1)">☆</span>
+                                <span class="star" onclick="rateProduct(2)">☆</span>
+                                <span class="star" onclick="rateProduct(3)">☆</span>
+                                <span class="star" onclick="rateProduct(4)">☆</span>
+                                <span class="star" onclick="rateProduct(5)">☆</span>
+                            
+                            </div>
+                            <p>Rs 5000</p>
+                            <button class="buybutton">Buy Now</button>
+                            <button class="cartbutton">Add to cart</button>
+                            </div>
+                            <div class="col-4">
+                                <img src="images/jeans1.jpg">
+                                <h4> Pants</h4>
+                                <div class="rating">
+                                    <span class="star" onclick="rateProduct(1)">☆</span>
+                                    <span class="star" onclick="rateProduct(2)">☆</span>
+                                    <span class="star" onclick="rateProduct(3)">☆</span>
+                                    <span class="star" onclick="rateProduct(4)">☆</span>
+                                    <span class="star" onclick="rateProduct(5)">☆</span>
+                                
+                                </div>
+                                <p>Rs 1200</p>
+                                <button class="buybutton">Buy Now</button>
+                                <button class="cartbutton">Add to cart</button>
+                                </div>
+                                <div class="col-4">
+                                    <img src="images/jeans3.jpg">
+                                    <h4> T-shirts and Shoes</h4>
+                                    <div class="rating">
+                                        <span class="star" onclick="rateProduct(1)">☆</span>
+                                        <span class="star" onclick="rateProduct(2)">☆</span>
+                                        <span class="star" onclick="rateProduct(3)">☆</span>
+                                        <span class="star" onclick="rateProduct(4)">☆</span>
+                                        <span class="star" onclick="rateProduct(5)">☆</span>
+                                    
+                                    </div>
+                                    <p>Rs 3500</p>
+                                    <button class="buybutton">Buy Now</button>
+                                    <button class="cartbutton">Add to cart</button>
+                                    </div>
+                    
+            </div>
+                    <!-----------offer------------>
+                    <div class="offer">
+                    <div class="small-container">
+                        <div class="row">
+                            <div class="col-2">
+                                <img src="images/exclusive.png" class="offer-img">
+                            </div>
+                             <div class="col-2">
+                            <p> Exclusively Available on The Yellow Store</p>
+                                 <h1> Smar Band 4</h1>
+                                 <small>The Mi Smart Band 4 features a 39.9% larger
+                            (than Mi Band 3) AMOLED color full-touch display with
+                            adjustable birghtness,so everything is clear as can
+                            be.</small><br>
+                            <button class="buybutton">Buy Now</button>
+                            <button class="cartbutton">Add to cart</button>
+                            
+
+
+  <div id="result"></div>
+
+  <script src="main.js"></script>
+                            </div>
+                            <!DOCTYPE html>
+
+                            <div class="offer">
+                                <div class="small-container">
+                                    <div class="row">
+                                        <div class="col-2">
+                                            <img src="images/1phone.jfif" class="offer-img">
+                                        </div>
+                                         <div class="col-2">
+                                        <p> Exclusively Available on The Yellow Store</p>
+                                             <h1> Samsung Gallaxy</h1>
+                                             <small>It is the best mobile phone with 6 gb 
+                                                ram with 128 GB storage.
+                                        </small><br>
+                                        <button class="buybutton">Buy Now</button>
+                                        <button class="cartbutton">Add to cart</button>
+                                        </div>
+                                        <div class="offer">
+                                            <div class="small-container">
+                                                <div class="row">
+                                                    <div class="col-2">
+                                                        <img src="images/camera 1.jpg" class="offer-img">
+                                                    </div>
+                                                     <div class="col-2">
+                                                    <p> Exclusively Available on The Yellow Store</p>
+                                                         <h1> Canon Camera</h1>
+                                                         <small>Compact and lightweight unidirectional stereo (120°) microphone
+                                                            Wind screen helps reduce peripheral sound from wind and other outside noise
+                                                            Mounts to the multifunction hot shoe creating a digital connection to the camera.
+                                                    </small><br>
+                                                    <button class="buybutton">Buy Now</button>
+                                                    <button class="cartbutton">Add to cart</button>
+                                                         
+                                                    </div>
+                                                    <div class="offer">
+                                                        <div class="small-container">
+                                                            <div class="row">
+                                                                <div class="col-2">
+                                                                    <img src="images/mi 5.jpeg" class="offer-img">
+                                                                </div>
+                                                                 <div class="col-2">
+                                                                <p> Exclusively Available on The Yellow Store</p>
+                                                                     <h1> Mi Laptop</h1>
+                                                                     <small>10th Generation Intel® Core™ i5
+                                                                        NVIDIA® GeForce® MX250
+                                                                        512GB SATA SSD
+                                                                        8GB DDR4 RAM
+                                                                        Full HD Anti-glare Display 35.56cm (14)
+                                                                        1.5kg Light & Sleek
+                                                                </small><br>
+                                                                <button class="buybutton">Buy Now</button>
+                                                                <button class="cartbutton">Add to cart</button>
+                                                                     
+                                                                </div>
+
+                        
+                        </div>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    <!--------------------Testimonial---------->
+                    <div class="testimonial">
+                    <div class="small-container">
+                        <div class="row">
+                        <div class="col-3">
+                            <i class="fa fa-quote-left"></i>
+                            <p>This is our first try so please provide us more feedback so that 
+                            we could make a app more better.</p>
+                             <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    
+                    </div>
+                            <img src="images/user-1.png">
+                            <h3>Asmi Dahal</h3>
+                            </div>
+                             <div class="col-3">
+                            <i class="fa fa-quote-left"></i>
+                            <p>From our website you will get all kind of product and for more product
+                                 you must visit our app available on playstore.</p>
+                             <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    
+                    </div>
+                            <img src="images/user-2.png">
+                            <h3>Dev Raj Basnet</h3>
+                            </div>
+                             <div class="col-3">
+                            <i class="fa fa-quote-left"></i>
+                            <p>This is our first launching product we want your feedback so 
+                                 provide us more feedback.</p>
+                             <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    
+                    </div>
+                            <img src="images/user-3.png">
+                            <h3>Mrs Rama</h3>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <!--------Brands----------------->
+                    <div class="brands">
+                    <div class="small-container">
+                         <h2 class="title">Payment Partner</h2>
+                        <div class="row">
+                        <div class="col-5">
+                            <img src="images/eee.png">
+                            </div>
+                            <div class="col-5">
+                            <img src="images/logo-oppo.png">
+                            </div>
+                            <div class="col-5">
+                            <img src="images/imepay.png">
+                            </div>
+                            <div class="col-5">
+                            <img src="images/logo-paypal.png">
+                            </div>
+                            <div class="col-5">
+                            <img src="images/khaltii.png">
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <!----------------footer------------->
+                    <div class="footer">
+                    <div class="container">
+                        <div class="row">
+                        <div class="footer-col-1">
+                            <h3> Download our app</h3>
+                            <p>Download app for android and ios mobile phone.</p>
+                            <div class="app-logo">
+                            <img src="images/play-store.png">
+                                <img src="images/app-store.png">
+                            </div>
+                            </div>
+                            <div class="footer-col-2">
+                            <img src="images/devur.png">
+                            <p>our purpose is to make the customer happy and provide satisfaction. </p>
+                            </div>
+                            <div class="footer-col-3">
+                            <h3> Useful links</h3>
+                            <ul>
+                                <li>Coupons</li>
+                                <li>Blog Post</li>
+                                <li>Return Policy</li>
+                                <li>Join Affiliate</li>
+                                </ul>
+                            </div>
+                             <div class="footer-col-4">
+                            <h3> Follow us</h3>
+                            <ul>
+                                <li>Facebook</li>
+                                <li>Twitter</li>
+                                <li>Instagram</li>
+                                <li>You Tube</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr>
+                        <p class="copyright">Copyright 2023 The Yellow Store (Dev Raj Basnet)</p>
+                        </div>
+                    </div>
+                    <!------------------js for toggle menu--------------->
+                    <script>
+                        var MenuItems= document.getElementById("MenuItems");
+                        MenuItems.style.maxHeight="0px";
+                        
+                        function menutoggle(){
+                            if(MenuItems.style.maxHeight=="0px")
+                                {
+                                    MenuItems.style.maxHeight="200px"
+                                }
+                            else
+                            {
+                            MenuItems.style.maxHeight="0px"    
+                            }
+                        }
+                    </script>
+                    <script src="main.js"></script>
+                   
+
+                    </body>
+                    </html>
